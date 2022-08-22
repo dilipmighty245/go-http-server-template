@@ -29,7 +29,7 @@ func Run(args []string, _ io.Writer) error {
 	)
 
 	flags := flag.NewFlagSet(args[0], flag.ExitOnError)
-	flags.StringVar(&port, "port", "8080", "set port")
+	flags.StringVar(&port, "port", "8080", "set port  --port=8080")
 	if err := flags.Parse(args[1:]); err != nil {
 		return err
 	}
